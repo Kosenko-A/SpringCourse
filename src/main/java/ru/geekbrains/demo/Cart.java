@@ -23,10 +23,11 @@ public class Cart {
         }
     }
 
-    @Override
-    public String toString() {
-        return "Cart{" +
-                productsInCart +
-                '}';
+    public void inCart() {
+        System.out.println(productsInCart);
+    }
+
+    public void clear() {
+        productsInCart.removeAll(productsInCart);
     }
 }
